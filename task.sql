@@ -10,3 +10,13 @@
 -- 2. создать entity-классы
 -- 3. создать заказ через EntityManager
 -- 4. создать отзыв через EntityManager
+
+
+create table users
+(
+    id         bigserial primary key,
+    login      varchar(100) not null,
+    password   varchar(200) not null,
+    role       varchar(20)  not null,
+    created_at timestamp    not null
+);
